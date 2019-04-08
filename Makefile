@@ -25,7 +25,7 @@ ifeq ($(EXEC_CONTAINER), false)
 	@gotest -mod readonly -failfast -race -covermode=atomic -coverprofile=test.cover ./...
 	@go tool cover -func=test.cover
 ifneq ($(COVERALLS_TOKEN), "")
-	@goveralls -coverprofile=test.cover
+	@goveralls -coverprofile=test.cover -debug
 endif
 	@rm -f test.cover
 else
