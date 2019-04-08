@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pipehub/pipehub/ci:2
+image: registry.gitlab.com/pipehub/pipehub/ci:3
 
 variables:
   GO111MODULE: 'on'
